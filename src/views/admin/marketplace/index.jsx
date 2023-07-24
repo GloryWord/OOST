@@ -42,16 +42,10 @@ import NFT from "components/card/NFT";
 import Card from "components/card/Card.js";
 
 // Assets
-import Nft1 from "assets/img/nfts/Nft1.png";
-import Nft2 from "assets/img/nfts/Nft2.png";
-import Nft3 from "assets/img/nfts/Nft3.png";
-import Nft4 from "assets/img/nfts/Nft4.png";
-import Nft5 from "assets/img/nfts/Nft5.png";
-import Nft6 from "assets/img/nfts/Nft6.png";
-import Avatar1 from "assets/img/avatars/avatar1.png";
-import Avatar2 from "assets/img/avatars/avatar2.png";
-import Avatar3 from "assets/img/avatars/avatar3.png";
-import Avatar4 from "assets/img/avatars/avatar4.png";
+import MCLS_11 from "assets/img/nfts/MCLS_11_thumb.png"
+import MCLS_08 from "assets/img/nfts/MCLS_08_thumb.png"
+import MCLS_06 from "assets/img/nfts/MCLS_06_thumb.png"
+import MCLS_05 from "assets/img/nfts/MCLS_05_thumb.png"
 import tableDataTopCreators from "views/admin/marketplace/variables/tableDataTopCreators.json";
 import { tableColumnsTopCreators } from "views/admin/marketplace/variables/tableColumnsTopCreators";
 
@@ -114,38 +108,29 @@ export default function Marketplace() {
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
               <NFT
-                name='세부 분석 파트 1'
-                author='1조 분석파트'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
-                image={Nft1}
+                name='사무·문구'
+                author='사무·문구 용품 관련 세부 정보를 탐색하세요!'
+                image={MCLS_05}
                 // currentbid='0.91 ETH'
-                download='#'
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_05'
               />
               <NFT
-                name='세부 분석 파트 2'
-                author='1조 분석 파트'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
-                image={Nft2}
-                // currentbid='0.91 ETH'
-                download='#'
+                name='반려동물'
+                author='반려동물 용품 관련 세부 정보를 탐색하세요!'
+                image={MCLS_06}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_06'
+              />
+              <NFT
+                name='아동·유아'
+                author='아동·유아용품 관련 세부 정보를 탐색하세요!'
+                image={MCLS_08}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_08'
+              />
+              <NFT
+                name='화장품'
+                author='화장품 분야 관련 세부 정보를 탐색하세요!'
+                image={MCLS_11}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_11'
               />
             </SimpleGrid>
           </Flex>
