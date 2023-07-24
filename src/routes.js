@@ -22,6 +22,9 @@ import MCLS_06 from "views/admin/MCLS_06";
 import MCLS_08 from "views/admin/MCLS_08";
 import MCLS_05 from "views/admin/MCLS_05";
 import MCLS_11 from "views/admin/MCLS_11";
+import MCLS_04_a from "views/admin/MCLS_04_a";
+import MCLS_04_b from "views/admin/MCLS_04_b";
+import MCLS_04_c from "views/admin/MCLS_04_c";
 //
 
 // Auth Imports
@@ -103,6 +106,27 @@ const routes = [
     path: "/MCLS_11",
     icon: [],
     component: MCLS_11,
+  },
+  {
+    name: "MCLS_04_a",
+    layout: "/admin",
+    path: "/MCLS_04_a",
+    icon: [],
+    component: MCLS_04_a,
+  },
+  {
+    name: "MCLS_04_b",
+    layout: "/admin",
+    path: "/MCLS_04_b",
+    icon: [],
+    component: MCLS_04_b,
+  },
+  {
+    name: "/MCLS_04_c",
+    layout: "/admin",
+    path: "/MCLS_04_c",
+    icon: [],
+    component: MCLS_04_c,
   },
 ];
 export default routes;
