@@ -15,7 +15,6 @@ import {
 // Custom components
 import Banner from "views/admin/marketplace/components/Banner";
 import TableTopCreators from "views/admin/marketplace/components/TableTopCreators";
-import HistoryItem from "views/admin/marketplace/components/HistoryItem";
 import NFT from "components/card/NFT";
 import Card from "components/card/Card.js";
 
@@ -24,8 +23,8 @@ import MCLS_11 from "assets/img/nfts/MCLS_11_thumb.png"
 import MCLS_08 from "assets/img/nfts/MCLS_08_thumb.png"
 import MCLS_06 from "assets/img/nfts/MCLS_06_thumb.png"
 import MCLS_05 from "assets/img/nfts/MCLS_05_thumb.png"
-import tableDataTopCreators from "views/admin/marketplace/variables/tableDataTopCreators.json";
-import { tableColumnsTopCreators } from "views/admin/marketplace/variables/tableColumnsTopCreators";
+import tableDataTop from "views/admin/marketplace/variables/tableDataTop_sample.json";
+import { tableColumnsTop } from "views/admin/marketplace/variables/tableColumnsTopCreators";
 
 export default function Marketplace() {
   // Chakra Color Mode
@@ -72,16 +71,6 @@ export default function Marketplace() {
                   to='#music'>
                   분석파트2
                 </Link>
-                {/* <Link
-                  color={textColorBrand}
-                  fontWeight='500'
-                  me={{ base: "34px", md: "44px" }}
-                  to='#collectibles'>
-                  생활/건강
-                </Link>
-                <Link color={textColorBrand} fontWeight='500' to='#sports'>
-                  스포츠/레저
-                </Link> */}
               </Flex>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
@@ -89,7 +78,6 @@ export default function Marketplace() {
                 name='사무·문구'
                 author='사무·문구 용품 관련 세부 정보를 탐색하세요!'
                 image={MCLS_05}
-                // currentbid='0.91 ETH'
                 download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_05'
               />
               <NFT
@@ -113,72 +101,17 @@ export default function Marketplace() {
             </SimpleGrid>
           </Flex>
         </Flex>
-        {/* 나영님 파트 */}
+        {/* 나영님 + 종웅님 파트 */}
         <Flex
           flexDirection='column'
           gridArea={{ xl: "1 / 3 / 2 / 4", "2xl": "1 / 2 / 2 / 3" }}>
           <Card px='0px' mb='20px'>
             <TableTopCreators
-              tableData={tableDataTopCreators}
-              columnsData={tableColumnsTopCreators}
+              tableData={tableDataTop}
+              // tableData={tableDataTopCreators}
+              columnsData={tableColumnsTop}
             />
           </Card>
-          {/* <Card p='0px'> */}
-            {/* <Flex
-              align={{ sm: "flex-start", lg: "center" }}
-              justify='space-between'
-              w='100%'
-              px='22px'
-              py='18px'>
-              <Text color={textColor} fontSize='xl' fontWeight='600'>
-                History
-              </Text>
-              <Button variant='action'>See all</Button>
-            </Flex> */}
-
-            {/* <HistoryItem
-              name='Colorful Heaven'
-              author='By Mark Benjamin'
-              date='30s ago'
-              image={Nft5}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Abstract Colors'
-              author='By Esthera Jackson'
-              date='58s ago'
-              image={Nft1}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='ETH AI Brain'
-              author='By Nick Wilson'
-              date='1m ago'
-              image={Nft2}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Swipe Circles'
-              author='By Peter Will'
-              date='1m ago'
-              image={Nft4}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='Mesh Gradients '
-              author='By Will Smith'
-              date='2m ago'
-              image={Nft3}
-              price='0.91 ETH'
-            />
-            <HistoryItem
-              name='3D Cubes Art'
-              author='By Manny Gates'
-              date='3m ago'
-              image={Nft6}
-              price='0.91 ETH'
-            /> */}
-          {/* </Card> */}
         </Flex>
       </Grid>
       {/* Delete Product */}

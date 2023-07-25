@@ -95,21 +95,23 @@ function TopCreatorTable(props) {
                     if (cell.column.Header === "Name") {
                       data = (
                         <Flex align='center'>
-                          <Avatar
-                            src={cell.value[1]}
+                          {/* <Avatar
+                            // src={cell.value[1]}
+                            src={cell.value}
                             w='30px'
                             h='30px'
                             me='8px'
-                          />
+                          /> */}
                           <Text
                             color={textColor}
                             fontSize='sm'
                             fontWeight='600'>
-                            {cell.value[0]}
+                            {cell.value}
+                            {/* {cell.value[0]} */}
                           </Text>
                         </Flex>
                       );
-                    } else if (cell.column.Header === "Artworks") {
+                    } else if (cell.column.Header === "경쟁강도") {
                       data = (
                         <Text
                           color={textColorSecondary}
@@ -118,16 +120,31 @@ function TopCreatorTable(props) {
                           {cell.value}
                         </Text>
                       );
-                    } else if (cell.column.Header === "Rating") {
+                    } else if (cell.column.Header === "클릭수") {
                       data = (
-                        <Box>
-                          <Progress
-                            variant='table'
-                            colorScheme='brandScheme'
-                            value={cell.value}
-                          />
-                        </Box>
+                        <Text
+                          color={textColorSecondary}
+                          fontSize='sm'
+                          fontWeight='500'>
+                          {cell.value}
+                        </Text>
+                        // <Box>
+                        //   <Progress
+                        //     variant='table'
+                        //     colorScheme='brandScheme'
+                        //     value={cell.value}
+                        //   />
+                        // </Box>
                       );
+                    } else if (cell.column.Header === "검색수") {
+                      data = (
+                        <Text
+                          color={textColorSecondary}
+                          fontSize='sm'
+                          fontWeight='500'>
+                          {cell.value}
+                        </Text>
+                    );
                     }
                     return (
                       <Td
