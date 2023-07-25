@@ -4,7 +4,7 @@ import React from "react";
 import { Button, Flex, Link, Text } from "@chakra-ui/react";
 
 // Assets
-import banner from "assets/img/nfts/MCLS_04_Banner.png";
+import banner from "assets/img/nfts/MCLS_04_a.png";
 
 export default function Banner() {
   // Chakra Color Mode
@@ -62,13 +62,10 @@ export default function Banner() {
           py='20px'
           px='27'
           me='38px'>
-          대체 텍스트
+          <Link href="https://search.shopping.naver.com/search/category/100000007" isExternal>
+            네이버에서 확인하기
+          </Link>
         </Button>
-        <Link>
-          <Text color='white' fontSize='sm' fontWeight='500'>
-            Show
-          </Text>
-        </Link>
       </Flex>
     </Flex>
   );

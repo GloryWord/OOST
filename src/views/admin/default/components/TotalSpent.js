@@ -27,7 +27,7 @@ function MyLineChart(props) {
            	 { name: "매출", data:lineChartData},
           ]}
           options={{
-            theme: { mode: "dark" },
+            theme: { mode: "bright" },
             chart: {
               height: 300,
               width: 500,
@@ -35,10 +35,10 @@ function MyLineChart(props) {
               background: "transparent",
             },
             stroke: {curve: "smooth",type: "line",},
-            grid: { show: false },
-            yaxis: { show: false },
+            grid: { show: true },
+            yaxis: { show: true },
             xaxis: {
-              labels: { show: false },
+              labels: { show: true },
               axisTicks: { show: false },
               axisBorder: { show: false },
               categories: ["2022.05", "2022.06","2022.07","2022.08","2022.09","2022.10","2022.11","2022.12","2023.01","2023.02","2023.03","2023.04","2023.05","2023.06"],
@@ -137,14 +137,14 @@ export default function TotalSpent(props) {
             상품군별 매출
           </Text>
           <Flex align='center' mb='20px'>
-            {/* <Text
+            <Text
               color='secondaryGray.600'
               fontSize='sm'
               fontWeight='700'
               mt='4px'
               me='12px'>
-              전년대비
-            </Text> */}
+              단위: 백만원
+            </Text>
             {/* <Flex align='center'>
               <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
               <Text color='green.500' fontSize='sm' fontWeight='700'>

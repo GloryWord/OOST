@@ -30,7 +30,7 @@ export default function Banner() {
         }}
         fontWeight='700'
         lineHeight={{ base: "32px", md: "42px" }}>
-        카테고리를 선택하고 상세 정보를 확인하세요
+        카테고리별 분석
       </Text>
       <Text
         fontSize='md'
@@ -46,8 +46,9 @@ export default function Banner() {
         fontWeight='500'
         mb='40px'
         lineHeight='28px'>
-        이 부분은 다른 텍스트로 대체될 예정입니다.
+        아래 목록에서 분야를 선택하세요!
       </Text>
+
       <Flex align='center'>
         <Button
           bg='white'
@@ -60,11 +61,11 @@ export default function Banner() {
           py='20px'
           px='27'
           me='38px'>
-          대체 텍스트
+          스크롤 내리기  
         </Button>
         <Link>
           <Text color='white' fontSize='sm' fontWeight='500'>
-            Show
+          
           </Text>
         </Link>
       </Flex>

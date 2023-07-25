@@ -29,7 +29,6 @@ import MCLS_04_c from "views/admin/MCLS_04_c";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
-import { NaverLogo } from "components/icons/Icons";
 //path 브라우저 URL 입력에 표시
 //component 지정된 경로에 표시하려는 보기 구성 요소
 //name : 사이드바에 표시되는 이름
@@ -80,35 +79,35 @@ const routes = [
     component: Tablo1,
   },
   {
-    name: [],
+    name: "반려동물용품",
     layout: "/admin",
     path: "/MCLS_06",
     icon: [],
     component: MCLS_06,
   },
   {
-    name: [],
+    name: "아동·유아용품",
     layout: "/admin",
     path: "/MCLS_08",
     icon: [],
     component: MCLS_08,
   },
   {
-    name: [],
+    name: "사무·문구용품",
     layout: "/admin",
     path: "/MCLS_05",
     icon: [],
     component: MCLS_05,
   },
   {
-    name: [],
+    name: "화장품",
     layout: "/admin",
     path: "/MCLS_11",
     icon: [],
     component: MCLS_11,
   },
   {
-    name: "MCLS_04_a",
+    name: "컴퓨터 및 주변기기",
     layout: "/admin",
     path: "/MCLS_04_a",
     icon: [],
@@ -122,7 +121,7 @@ const routes = [
     component: MCLS_04_b,
   },
   {
-    name: "/MCLS_04_c",
+    name: "MCLS_04_c",
     layout: "/admin",
     path: "/MCLS_04_c",
     icon: [],

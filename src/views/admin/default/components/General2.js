@@ -26,28 +26,31 @@ export default function GeneralInformation(props) {
         Brief Information
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
-        통계청 상품군별 매출액
+        쇼핑 API 클릭율의 경우 상대적인 지표입니다.
+      </Text>
+      <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
+        증감율을 파악하는 용도로만 쓰길 권합니다.
       </Text>
       <SimpleGrid columns='2' gap='20px'>
         <Information
           boxShadow={cardShadow}
           title='출처'
-          value='통계청'
+          value='네이버 쇼핑 API'
         />
         <Information
           boxShadow={cardShadow}
           title='기간'
-          value='22년 5월 ~ 23년 5월'
+          value='23년 7월 10일~ 19일'
         />
         <Information
           boxShadow={cardShadow}
-          title='매출 부분'
-          value='온라인+모바일 합계'
+          title='집계기준'
+          value='PC+MO, 전체 성별, 상대 클릭수'
         />
         <Information
           boxShadow={cardShadow}
           title='카테고리 개수'
-          value='19개'
+          value='8개'
         />
         {/* <Information
           boxShadow={cardShadow}

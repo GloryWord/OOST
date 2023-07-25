@@ -37,7 +37,6 @@ import Usa from "assets/img/dashboards/usa.png";
 import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
-//import { OOSTrendLogo } from "components/icons/Icons";
 import React from 'react';
 import { ReactComponent as Naver } from "assets/img/logo/Naver_Logotype.svg";
 // import { ReactComponent as Crocs } from "assets/img/logo/Naver_Logotype.svg"
@@ -64,6 +63,7 @@ import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
 import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 //
 import General from "views/admin/default/components/General";
+import General2 from "views/admin/default/components/General2";
 
 export default function UserReports() {
   // Chakra Color Mode
@@ -77,35 +77,6 @@ export default function UserReports() {
         columns={{ base: 1, md: 2, lg: 2, "2xl": 4 }}
         gap='20px'
         mb='20px'>
-        {/* <MiniStatistics
-          startContent={
-            <IconBox
-              w='56px'
-              h='56px'
-              bg={boxBg}       
-              
-            />
-          }
-          // image={Crocs}
-          name='클릭율 높은 카테고리'
-          value='크록스'
-          growth = '+23%'
-        /> */}
-        {/* <MiniStatistics
-          startContent={
-            <IconBox
-              w='56px'
-              h='56px'
-              bg={boxBg}
-              icon={
-                // <Icon w='32px' h='32px' as={OOSTrendLogo} color={brandColor} />
-                <Icon w='32px' h='32px' as={Naver} color={brandColor} />
-              }
-            />
-          }
-          name='대분류'
-          value='10개 기준'
-        /> */}
         <MiniStatistics 
           growth='+23%' 
           name='클릭율 높은 카테고리' 
@@ -137,7 +108,7 @@ export default function UserReports() {
       <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
         {/* <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} /> */}
         <TotalTraffic />
-        <General gridArea={{ base: "2 / 1 / 3 / 2", lg: "1 / 2 / 2 / 3" }}
+        <General2 gridArea={{ base: "2 / 1 / 3 / 2", lg: "1 / 2 / 2 / 3" }}
           minH='365px'
           pe='20px'
         />
