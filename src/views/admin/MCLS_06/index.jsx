@@ -47,6 +47,8 @@ import avatar from "assets/img/avatars/avatar4.png";
 import banner from "assets/img/auth/banner.png";
 import MCLS_06_graph1 from "assets/img/graph/MCLS_06_graph1.png"
 import MCLS_06_graph2 from "assets/img/graph/MCLS_06_graph2.png"
+import MCLS_06_api from "assets/img/graph/MCLS_06_api.png"
+import MCLS_06_pie from "assets/img/graph/MCLS_06_pie.png"
 
 export default function MCLS_06() {
   // Chakra Color Mode
@@ -77,21 +79,27 @@ export default function MCLS_06() {
               direction={{ base: "column", md: "row" }}
               align={{ base: "start", md: "center" }}>
               <Text color={textColor} fontSize='2xl' ms='24px' fontWeight='700'>
-                매출 동향
+                매출 & API 동향
               </Text>
             </Flex>
             {/* 이미지 출력부분 */}
-            <SimpleGrid columns={{ base: 1, md: 1 }} gap='20px' row = {2}>
+            <SimpleGrid columns={{ base: 2, md: 2 }} gap='20px' row = {2} col = {2}>
               <Graph
                 content = "최근 5년간 지속적으로 매출 성장"
                 image={MCLS_06_graph1}
-                
               />
               <Graph
                 content = "모바일 시장 매출 위주로 성장"
                 image={MCLS_06_graph2}
-
               />
+              <Graph
+                content = "작년 12월 이후 모바일 시장 역전 현상"
+                image={MCLS_06_api}
+              />
+              <Graph
+                content = "최근 1년 api 동향"
+                image={MCLS_06_pie}
+              />                             
             </SimpleGrid>
           </Flex>
 

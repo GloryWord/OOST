@@ -4,7 +4,7 @@ import React from "react";
 import { Button, Flex, Link, Text } from "@chakra-ui/react";
 
 // Assets
-import banner from "assets/img/nfts/MCLS_04_Banner.png";
+import banner from "assets/img/nfts/MCLS_04_c.png";
 
 export default function Banner() {
   // Chakra Color Mode
@@ -31,7 +31,7 @@ export default function Banner() {
         }}
         fontWeight='700'
         lineHeight={{ base: "32px", md: "42px" }}>
-        컴퓨터 및 주변기기는
+        통신기기는
       </Text>
       <Text
         fontSize='md'
@@ -47,9 +47,24 @@ export default function Banner() {
         fontWeight='500'
         mb='40px'
         lineHeight='28px'>
-        PC, PC부품, 모니터, 멀티미디어 장비, 노트북, 프린터, 스피커, CD형태
-         등으로<br></br>이루어져 있어요.
+        휴대폰, 휴대폰 주변기기, 유무선 전화기, 무전기
       </Text>
+      <Text
+        fontSize='md'
+        color='#E3DAFF'
+        maxW={{
+          base: "100%",
+          md: "64%",
+          lg: "40%",
+          xl: "56%",
+          "2xl": "46%",
+          "3xl": "34%",
+        }}
+        fontWeight='500'
+        mb='40px'
+        lineHeight='28px'>
+        로 이루어져 있어요.
+      </Text>      
       <Flex align='center'>
         <Button
           bg='white'
@@ -62,13 +77,10 @@ export default function Banner() {
           py='20px'
           px='27'
           me='38px'>
-          대체 텍스트
+          <Link href="https://search.shopping.naver.com/search/category/100000006" isExternal>
+            네이버에서 확인하기
+          </Link>             
         </Button>
-        <Link>
-          <Text color='white' fontSize='sm' fontWeight='500'>
-            Show
-          </Text>
-        </Link>
       </Flex>
     </Flex>
   );

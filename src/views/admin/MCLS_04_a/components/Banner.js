@@ -48,8 +48,23 @@ export default function Banner() {
         mb='40px'
         lineHeight='28px'>
         PC, PC부품, 모니터, 멀티미디어 장비, 노트북, 프린터, 스피커, CD형태
-         등으로<br></br>이루어져 있어요.
       </Text>
+      <Text
+        fontSize='md'
+        color='#E3DAFF'
+        maxW={{
+          base: "100%",
+          md: "64%",
+          lg: "40%",
+          xl: "56%",
+          "2xl": "46%",
+          "3xl": "34%",
+        }}
+        fontWeight='500'
+        mb='40px'
+        lineHeight='28px'>
+        로 이루어져 있어요.
+      </Text>      
       <Flex align='center'>
         <Button
           bg='white'

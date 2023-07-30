@@ -114,14 +114,14 @@ const routes = [
     component: MCLS_04_a,
   },
   {
-    name: "MCLS_04_b",
+    name: "가전·전자",
     layout: "/admin",
     path: "/MCLS_04_b",
     icon: [],
     component: MCLS_04_b,
   },
   {
-    name: "MCLS_04_c",
+    name: "통신기기",
     layout: "/admin",
     path: "/MCLS_04_c",
     icon: [],
