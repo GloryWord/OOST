@@ -16,6 +16,10 @@ import {
 import "assets/css/App.css";
 import MCLS_04_a_graph1 from "assets/img/graph/PC부품,PC 검색량.png"
 import MCLS_04_a_graph2 from "assets/img/graph/노트북,노트북악세사리.png"
+import MCLS_04_a_spent from "assets/img/graph/MCLS_04_spent.png"
+import MCLS_04_gen from "assets/img/graph/MCLS_04_gen.png"
+import MCLS_04_a_api from "assets/img/graph/MCLS_04_a_api.png"
+
 import Banner from "views/admin/MCLS_04_a/components/Banner";
 import Card from "components/card/Card.js";
 
@@ -59,7 +63,11 @@ export default function MCLS_04_a() {
         {/* 배치 시작할 행 / 열, 배치 끝낼 행 / 열 */}
         <Graph image={MCLS_04_a_graph1} content = "PC트래픽과 PC부품 트래픽 증감 변화가 일치합니다."/>
         <Graph image={MCLS_04_a_graph2} content = "노트북 트래픽과 노트북 액세서리 트래픽 증감 변화가 일치합니다."/>
-
+        <Graph image={MCLS_04_a_spent} content = "시장 내 웹/모바일 매출 점유율이 비슷합니다"/>
+        <Graph image={MCLS_04_gen} content = "남성 트래픽은 꾸준한 반면 여성 트래픽은 특성시기에 집중됩니다."/>
+      </SimpleGrid>
+      <SimpleGrid columns={{ base: 1, md: 1 }} gap='20px' row = {2}>
+        <Graph image={MCLS_04_a_api} content= "주요 항목의 트래픽 변화량입니다."/>
       </SimpleGrid>
       <Flex>
         <Card>

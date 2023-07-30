@@ -57,13 +57,13 @@ const routes = [
     component: NFTMarketplace,
     secondary: true,
   },
-  {
-    name: "Data Tables",
-    layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: "/data-tables",
-    component: DataTables,
-  },
+  // {
+  //   name: "Data Tables",
+  //   layout: "/admin",
+  //   icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+  //   path: "/data-tables",
+  //   component: DataTables,
+  // },
   {
     name: "태블로 리스트",
     layout: "/tablolist",
@@ -72,11 +72,25 @@ const routes = [
     component: Tablolist,
   },
   {
-    name: [],
+    name: "컴퓨터 및 주변기기",
     layout: "/admin",
-    path: "/tablo1",
+    path: "/MCLS_04_a",
     icon: [],
-    component: Tablo1,
+    component: MCLS_04_a,
+  },
+  {
+    name: "가전·전자",
+    layout: "/admin",
+    path: "/MCLS_04_b",
+    icon: [],
+    component: MCLS_04_b,
+  },
+  {
+    name: "통신기기",
+    layout: "/admin",
+    path: "/MCLS_04_c",
+    icon: [],
+    component: MCLS_04_c,
   },
   {
     name: "반려동물용품",
@@ -107,25 +121,11 @@ const routes = [
     component: MCLS_11,
   },
   {
-    name: "컴퓨터 및 주변기기",
+    name: [],
     layout: "/admin",
-    path: "/MCLS_04_a",
+    path: "/tablo1",
     icon: [],
-    component: MCLS_04_a,
-  },
-  {
-    name: "가전·전자",
-    layout: "/admin",
-    path: "/MCLS_04_b",
-    icon: [],
-    component: MCLS_04_b,
-  },
-  {
-    name: "통신기기",
-    layout: "/admin",
-    path: "/MCLS_04_c",
-    icon: [],
-    component: MCLS_04_c,
+    component: Tablo1,
   },
 ];
 export default routes;

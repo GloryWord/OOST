@@ -23,6 +23,9 @@ import MCLS_11 from "assets/img/nfts/MCLS_11_thumb.png"
 import MCLS_08 from "assets/img/nfts/MCLS_08_thumb.png"
 import MCLS_06 from "assets/img/nfts/MCLS_06_thumb.png"
 import MCLS_05 from "assets/img/nfts/MCLS_05_thumb.png"
+import MCLS_04_a from "assets/img/nfts/MCLS_04_a_thumb.png"
+import MCLS_04_b from "assets/img/nfts/MCLS_04_b_thumb.png"
+import MCLS_04_c from "assets/img/nfts/MCLS_04_c_thumb.png"
 import tableDataTop from "views/admin/marketplace/variables/tableDataTop_sample.json";
 import { tableColumnsTop } from "views/admin/marketplace/variables/tableColumnsTopCreators";
 
@@ -62,18 +65,36 @@ export default function Marketplace() {
                   fontWeight='500'
                   me={{ base: "34px", md: "44px" }}
                   to='#art'>
-                  분석파트1
+                  
                 </Link>
                 <Link
                   color={textColorBrand}
                   fontWeight='500'
                   me={{ base: "34px", md: "44px" }}
                   to='#music'>
-                  분석파트2
+                  
                 </Link>
               </Flex>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
+              <NFT
+                name='컴퓨터 및 주변기기'
+                author='컴퓨터 및 주변기기 관련 세부 정보를 탐색하세요!'
+                image={MCLS_04_a}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_04_a'
+              />
+              <NFT
+                name='가전·전자'
+                author='가전·전자 관련 세부 정보를 탐색하세요!'
+                image={MCLS_04_b}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_04_b'
+              />
+              <NFT
+                name='통신기기'
+                author='통신기기 관련 세부 정보를 탐색하세요!'
+                image={MCLS_04_c}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/MCLS_04_c'
+              />
               <NFT
                 name='사무·문구'
                 author='사무·문구 용품 관련 세부 정보를 탐색하세요!'

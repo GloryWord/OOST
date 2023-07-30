@@ -83,11 +83,11 @@ export default function Marketplace() {
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 4 }} gap='20px'>
               <TabloCard
-                name='태블로 샘플 파트 1'
-                author='태블로 샘플 1'
+                name='자치구 통신사 데이터'
+                author='#태블로 분석'
                 image={Pop}
                 // currentbid='0.91 ETH' 
-                download='http://localhost:3000/horizon-ui-chakra#/tablo/tablo1'
+                download='http://localhost:3000/horizon-ui-chakra#/admin/tablo1'
               />
               <TabloCard
                 name='태블로 샘플 파트 2'

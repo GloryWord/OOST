@@ -32,6 +32,7 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
+  Center
 } from "@chakra-ui/react";
 // Assets
 // Custom components
@@ -41,7 +42,8 @@ import General from "views/admin/MCLS_08/components/General";
 import Projects from "views/admin/MCLS_08/components/Projects";
 import Banner from "views/admin/MCLS_08/components/Banner copy";
 import Card from "components/card/Card.js";
-import Graph from "components/card/Graph"
+import Graph from "components/card/Graph";
+import LinkToTableauButton from "components/card/LinkToTableauButton";
 // Assets
 import avatar from "assets/img/avatars/avatar4.png";
 import banner from "assets/img/auth/banner.png";
@@ -93,10 +95,10 @@ export default function MCLS_08() {
                 image={MCLS_08_graph2}
                 content= "12월 완구/매트, 유아동 잡화, 최근 2~3월 신생아용품 변동"
               />
-              <Graph
+              {/* <Graph
                 image={MCLS_08_pie}
                 content= "최근 1년 모바일 점유율 우세"
-              />
+              /> */}
               <Graph
               image={MCLS_08_f}
               content= "여성 클릭량 우세 키워드"
@@ -130,7 +132,27 @@ export default function MCLS_08() {
           following='274'
           />
         </Flex>
-      </Grid>  
+      </Grid>
+      <Flex>
+        <Card>
+          <Center>
+          <LinkToTableauButton
+            buttonText="성별 트래픽"
+            backgroundColor="green.500"
+            hoverColor="green.600"
+            link="https://public.tableau.com/app/profile/.55283864/viz/2023-07-13_16892157156940/34"
+          />
+          <LinkToTableauButton
+            buttonText="기기별 트래픽"
+            backgroundColor="blue.500"
+            hoverColor="blue.600"
+            link = "https://public.tableau.com/app/profile/.55283864/viz/2023-07-13_16892156321980/31"
+          />
+
+
+          </Center>
+        </Card>
+      </Flex>     
     </Box>
   );
 }

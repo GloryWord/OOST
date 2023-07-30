@@ -81,11 +81,6 @@ export default function Banner() {
             네이버에서 확인하기
           </Link>            
         </Button>
-        <Link>
-          <Text color='white' fontSize='sm' fontWeight='500'>
-            Show
-          </Text>
-        </Link>
       </Flex>
     </Flex>
   );
