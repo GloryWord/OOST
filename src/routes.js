@@ -18,6 +18,10 @@ import RTL from "views/admin/rtl";
 //
 import Tablolist from "views/admin/tabloList";
 import Tablo1 from "views/admin/tablo1";
+import Tablo2 from "views/admin/tablo2";
+import Tablo3 from "views/admin/tablo3";
+import Tablo4 from "views/admin/tablo4";
+
 import MCLS_06 from "views/admin/MCLS_06";
 import MCLS_08 from "views/admin/MCLS_08";
 import MCLS_05 from "views/admin/MCLS_05";
@@ -126,6 +130,27 @@ const routes = [
     path: "/tablo1",
     icon: [],
     component: Tablo1,
+  },
+  {
+    name: [],
+    layout: "/admin",
+    path: "/tablo2",
+    icon: [],
+    component: Tablo2,
+  },
+  {
+    name: [],
+    layout: "/admin",
+    path: "/tablo3",
+    icon: [],
+    component: Tablo3,
+  },
+  {
+    name: [],
+    layout: "/admin",
+    path: "/tablo4",
+    icon: [],
+    component: Tablo4,
   },
 ];
 export default routes;
