@@ -46,6 +46,9 @@ import TabloCard from "components/card/TabloCard";
 
 import Pop from "assets/img/nfts/pop.png";
 import Pie from "assets/img/nfts/pie.png";
+import MCLS_01 from "assets/img/nfts/MCLS_01_thumb1.png";
+import MCLS_01_pie from "assets/img/nfts/MCLS_01_thumb2.png";
+import MCLS_06 from "assets/img/nfts/MCLS_06_thumb1.png";
 import LCLS_fm from "assets/img/nfts/LCLS_fm.png"
 import LCLS_type from "assets/img/nfts/LCLS_type.png"
 // delete parts
@@ -83,32 +86,28 @@ export default function Marketplace() {
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 4 }} gap='20px'>
               <TabloCard
-                name='태블로 샘플 파트 1'
-                author='태블로 샘플 1'
-                image={Pop}
-                // currentbid='0.91 ETH' 
-                download='http://localhost:3000/horizon-ui-chakra#/tablo/tablo1'
+                name='자치구 통신사 데이터'
+                author='#태블로 분석'
+                image={Pop} 
+                download='http://localhost:3000/horizon-ui-chakra#/admin/tablo1'
               />
               <TabloCard
-                name='태블로 샘플 파트 2'
-                author='태블로 샘플 2'
-                image={Pie}
-                // currentbid='0.91 ETH'
-                download='#'
+                name='가구/인테리어 API'
+                author='#태블로 분석'
+                image={MCLS_01}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/tablo2'
               />
               <TabloCard
-                name='태블로 샘플 파트 2'
-                author='태블로 샘플 2'
-                image={LCLS_fm}
-                // currentbid='0.91 ETH'
-                download='#'
+                name='가구/인테리어 파이차트'
+                author='#태블로 분석'
+                image={MCLS_01_pie}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/tablo3'
               />
               <TabloCard
-                name='태블로 샘플 파트 2'
-                author='태블로 샘플 2'
-                image={LCLS_type}
-                // currentbid='0.91 ETH'
-                download='#'
+                name='스포츠/레저 API'
+                author='#태블로분석'
+                image={MCLS_06}
+                download='http://localhost:3000/horizon-ui-chakra#/admin/tablo4'
               />
             </SimpleGrid>
           </Flex>

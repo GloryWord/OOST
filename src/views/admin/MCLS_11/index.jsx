@@ -83,15 +83,9 @@ export default function MCLS_11() {
             {/* 이미지 출력부분 */}
             <SimpleGrid columns={{ base: 1, md: 1 }} gap='20px' row = {2}>
               <Graph
-
                 image={MCLS_11_graph1}
                 content= "인터넷 시장과 모바일 시장이 양분하다 최근 들어 모바일 시장이 우세"
-                
               />
-              {/* <Graph
-                image={MCLS_06_graph2}
-
-              /> */}
             </SimpleGrid>
           </Flex>
         </Flex>

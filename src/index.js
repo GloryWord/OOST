@@ -19,7 +19,7 @@ ReactDOM.render(
 					<Switch>
 						<Route path={`/auth`} component={AuthLayout} />
 						<Route path={`/admin`} component={AdminLayout} />
-						<Route path={`/rtl`} component={RtlLayout} />
+						{/* <Route path={`/rtl`} component={RtlLayout} /> */}
 						<Route path={`/tablo`} component={TabloLayout} />
 						<Route path={`/tablolist`}>
 							<Route index component ={TabloListLayout} />

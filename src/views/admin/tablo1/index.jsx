@@ -41,7 +41,7 @@ export default function Tablo1() {
     <flex>
       <iframe
       src = "https://public.tableau.com/shared/5NMZWJ5X4?:display_count=n&:origin=viz_share_link?:showVizHome=no&:embed=true"
-      //src="https://public.tableau.com/views/_16890614990300/1?:language=ko-KR&:display_count=n&:origin=viz_share_link?:showVizHome=no&:embed=true "
+      // src = "https://public.tableau.com/app/profile/.55283864"
       width="100%"
       height="900"
       title='test1'/>

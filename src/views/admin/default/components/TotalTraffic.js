@@ -40,7 +40,7 @@ function MyLineChart(props) {
            	 { name: "Rate", data:lineChartData},
           ]}
           options={{
-            theme: { mode: "dark" },
+            theme: { mode: "bright" },
             chart: {
               height: 300,
               width: 500,
@@ -48,11 +48,14 @@ function MyLineChart(props) {
               background: "transparent",
             },
             stroke: {curve: "smooth",type: "line",},
-            grid: { show: false },
-            yaxis: { show: false },
+            grid: { show: true },
+            yaxis: { 
+              labels: {show: true },
+              
+            },
             xaxis: {
-              labels: { show: false },
-              axisTicks: { show: false },
+              labels: { show: true },
+              axisTicks: { show: true  },
               axisBorder: { show: false },
               categories: ["2023-07-10", "2023-07-11", "2023-07-12", "2023-07-13", "2023-07-14", "2023-07-15", 
                 "2023-07-16", "2023-07-17", "2023-07-18","2023-07-19"],
@@ -76,7 +79,8 @@ export default function TotalTraffic(props) {
 
   // Chakra Color Mode
 
-  const textColor = useColorModeValue("secondaryGray.900", "white");
+  //const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColor = useColorModeValue("secondaryBlack.900", "black");
   const textColorSecondary = useColorModeValue("secondaryGray.600", "white");
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
   const iconColor = useColorModeValue("brand.500", "white");
@@ -127,21 +131,6 @@ export default function TotalTraffic(props) {
             <option value="패션잡화">패션잡화</option>
             <option value="화장품/미용">화장품/미용</option>
           </Select>
-          {/* <Button
-            ms='auto'
-            align='center'
-            justifyContent='center'
-            bg={bgButton}
-            _hover={bgHover}
-            _focus={bgFocus}
-            _active={bgFocus}
-            w='37px'
-            h='37px'
-            lineHeight='100%'
-            borderRadius='10px'
-            {...rest}>
-            <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
-          </Button> */}
         </Flex>
       </Flex>
       <Flex w='100%' flexDirection={{ base: "column", lg: "row" }}>
@@ -155,26 +144,25 @@ export default function TotalTraffic(props) {
             주간 클릭 동향
           </Text>
           <Flex align='center' mb='20px'>
-            <Text
+            {/* <Text
               color='secondaryGray.600'
               fontSize='sm'
               fontWeight='500'
               mt='4px'
               me='12px'>
-              23/07/10 ~ 23/07/19
-            </Text>
-            {/* <Flex align='center'>
-              <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
+              네이버 쇼핑
+            </Text> */}
+            <Flex align='center'>
               <Text color='green.500' fontSize='sm' fontWeight='700'>
-                +12.45%
+                네이버 쇼핑
               </Text>
-            </Flex> */}
+            </Flex>
           </Flex>
 
           <Flex align='center'>
             <Icon as={IoCheckmarkCircle} color='green.500' me='4px' />
             <Text color='green.500' fontSize='md' fontWeight='700'>
-              Live
+              Week
             </Text>
           </Flex>
         </Flex>

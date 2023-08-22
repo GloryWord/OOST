@@ -26,30 +26,28 @@ export default function GeneralInformation(props) {
         Brief Information
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
-        모든 기간동안, 모바일 매출액이 높은데, 검색량은 pc에서 더 많다니…?
-        모바일 매출액이 높은 이유? 
-        간편결제방식, 쇼핑 어플 전용 할인혜택, PC보다는 시간과 장소 제약 없이 사용할 수 있음
+        통계청 상품군별 매출액
       </Text>
       <SimpleGrid columns='2' gap='20px'>
         <Information
           boxShadow={cardShadow}
-          title='Data'
-          value='통계청 데이터'
+          title='출처'
+          value='통계청'
         />
         <Information
           boxShadow={cardShadow}
           title='기간'
-          value='2021년 5월 ~ 23년 5월(2개년)'
+          value='22년 5월 ~ 23년 5월'
         />
         <Information
           boxShadow={cardShadow}
-          title='Data'
-          value='네이버 쇼핑 API'
+          title='매출 부분'
+          value='온라인+모바일 합계'
         />
         <Information
           boxShadow={cardShadow}
-          title='기간'
-          value='2021년 5월 ~ 23년 5월(2개년)'
+          title='카테고리 개수'
+          value='19개'
         />
         {/* <Information
           boxShadow={cardShadow}

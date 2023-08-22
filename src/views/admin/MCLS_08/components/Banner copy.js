@@ -62,7 +62,9 @@ export default function Banner() {
           py='20px'
           px='27'
           me='38px'>
-          대체 텍스트
+          <Link href="https://search.shopping.naver.com/search/category/100000008" isExternal>
+            네이버에서 확인하기
+          </Link>
         </Button>
         {/* <Link>
           <Text color='white' fontSize='sm' fontWeight='500'>
